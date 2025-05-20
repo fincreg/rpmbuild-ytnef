@@ -1,9 +1,7 @@
 name: Experiment
 
 on:
-  push:
-    branches:
-      - '**' # Trigger only on branch pushes (excludes tags)
+  workflow_dispatch:
 
 env:
   # SOURCEURL: 
