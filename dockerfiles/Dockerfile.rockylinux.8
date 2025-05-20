@@ -1,0 +1,6 @@
+FROM rockylinux:8
+
+RUN dnf -y group install --with-optional 'Development Tools' 'RPM Development Tools'
+RUN rpmdev-setuptree
+
+WORKDIR /root/rpmbuild
